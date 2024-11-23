@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 844px) {
+html, body {
+  height: 100%; 
+}
+
+body {
+  min-height: 100vh; 
+  background-color: #111827; 
+}
+
+@supports (height: 100dvh) {
   body {
-    @apply overflow-hidden;
+    min-height: 100dvh;
   }
 }
